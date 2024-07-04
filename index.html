@@ -4,35 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <title>Encryptor</title>
 </head>
 <body>
-  <nav>
-    <img src="./assets/Alura_logo.svg" alt="Alura logo">
-  </nav>
-  <h1>Encryptor</h1>
-  <div>
-    <p>¡Hey, gracias por estar aquí!</p>
-    <p>Este proyecto es parte del programa ONE de Oracle y Alura como práctica de las tecnologías básicas del desarrollo web.</p>
-  </div>
 
-  <main>
-    <p>Ingresa un texto y pulsa un botón para encriptar o desencriptar.</p>
-    <p>Solo serán procesadas letras minúsculas y sin acentos</p>
-    <textarea type="text" placeholder="Ingrese el texto aquí" id="input-element"></textarea>
-    <button id="encrypt-button" type="button">Encriptar</button>
-    <button id="decrypt-button" type="button">Desencriptar</button>
+  <h1 class="heading">Encryptor</h1>
+  <section class="card">
+    <h2 class="card__title">¡Hey, gracias por estar aquí!</h2>
+    <img class="card__sticker" src="./assets/bonbon-line-programmer-coding-at-laptop.png" alt="">
+    <p class="card__text">Este proyecto es parte del programa ONE de Oracle y Alura como práctica de las tecnologías básicas del desarrollo web.</p>
+    <div class="card__actions">
+      <a class="card__actions__link" href="https://www.oracle.com/mx/education/oracle-next-education/" target="_blank">
+        Acerca de ONE
+      </a>
+      |
+      <a class="card__actions__link" href="https://github.com/EdgarParucho/ONE-challenge-01-encryptor" target="_blank">
+        Repositorio
+      </a>
+    </div>
+  </section>
+
+  <main class="input__output">
+
+    <section class="card">
+      <h4 class="card__title">Ingresa un texto aquí</h4>
+      <p class="card__text">Ingresa un texto y pulsa un botón para encriptar o desencriptar.</p>
+      <div class="card__alert">
+        <img src="./assets/icons8-information-50.png" alt="information icon" class="alert__icon">
+        <p>Solo serán procesadas letras minúsculas y sin acentos</p>
+      </div>
+      <textarea class="input__field" type="text" placeholder="Ingrese el texto aquí" id="input-element"></textarea>
+      <div class="card__actions">
+        <button class="card__actions__button" id="encrypt-button" type="button">Encriptar</button>
+        <button class="card__actions__button" id="decrypt-button" type="button">Desencriptar</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h4 class="card__title">Resultado del proceso</h4>
+      <p class="card__text" id="output-element">Ningún mensaje encontrado</p>
+      <div class="card__actions">
+        <button class="card__actions__button" id="copy-button" type="button">Copiar</button>
+      </div>
+    </section>
   </main>
-
-  <aside>
-    <h4>Resultado</h4>
-    <p id="output-element">Ningún mensaje fué encontrado</p>
-    <button id="copy-button" type="button">Copiar</button>
-  </aside>
   
-  <footer>
+  <footer class="footer">
     <p>Desarrollado por Edgar Parucho, 2024</p>
-    <p>Ilustraciones por el equipo de diseño de Alura</p>
+    <div class="footer__links">
+      <a class="footer__links__item" href="https://github.com/edgarparucho">
+        <img src="./assets/icons8-github-30.png" alt="logo github">
+      </a>
+      <a class="footer__links__item" href="">
+        <img src="./assets/icons8-linkedin-50.png" alt="logo linkedin">
+      </a>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>

@@ -23,3 +23,4 @@ function decryptString(string) {
 
 document.getElementById('encrypt-button').addEventListener('click', () => outputElement.innerText = encryptString(inputElement.value));
 document.getElementById('decrypt-button').addEventListener('click', () => outputElement.innerText = decryptString(inputElement.value));
+document.getElementById('copy-button').addEventListener('click', () => navigator.clipboard.writeText(outputElement.innerText));

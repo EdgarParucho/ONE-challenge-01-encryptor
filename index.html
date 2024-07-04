@@ -10,29 +10,29 @@
   <nav>
     <img src="./assets/Alura_logo.svg" alt="Alura logo">
   </nav>
-  <h1>Encriptor</h1>
+  <h1>Encryptor</h1>
   <div>
     <p>¡Hey, gracias por estar aquí!</p>
-    <p>Este es un proyecto para practicar las tecnologías básicas del desarrollo web como parte del programa ONE de Oracle y Alura.</p>
+    <p>Este proyecto es parte del programa ONE de Oracle y Alura como práctica de las tecnologías básicas del desarrollo web.</p>
   </div>
 
-  <p>Ingresa un texto para encriptar o desencriptar.</p>
-  <p>Solo letras minúsculas y sin acentos</p>
-  <form>
-    <textarea type="text" placeholder="Ingrese el texto aquí"></textarea>
-    <button type="button">Encriptar</button>
-    <button type="button">Desencriptar</button>
-  </form>
+  <main>
+    <p>Ingresa un texto y pulsa un botón para encriptar o desencriptar.</p>
+    <p>Solo serán procesadas letras minúsculas y sin acentos</p>
+    <textarea type="text" placeholder="Ingrese el texto aquí" id="input-element"></textarea>
+    <button id="encrypt-button" type="button">Encriptar</button>
+    <button id="decrypt-button" type="button">Desencriptar</button>
+  </main>
 
   <aside>
     <h4>Resultado</h4>
-    <p>Ningún mensaje fué encontrado</p>
+    <p id="output-element">Ningún mensaje fué encontrado</p>
     <button type="button">Copiar</button>
   </aside>
   
   <footer>
     <p>Desarrollado por Edgar Parucho, 2024</p>
-    <p>Ilustraciones del equipo de Alura</p>
+    <p>Ilustraciones por el equipo de diseño de Alura</p>
   </footer>
   <script src="script.js"></script>
 </body>

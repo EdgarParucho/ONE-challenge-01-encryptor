@@ -27,29 +27,30 @@
     </div>
   </section>
 
-  <main class="input__output">
+  <main class="main">
 
-    <section class="input__output__card">
+    <section class="main__card">
       <h4 class="card__title">Entrada</h4>
       <p class="card__text">Ingresa un texto y pulsa un botón para encriptar o desencriptar.</p>
       <div class="card__alert">
         <img src="./assets/icons8-information-50.png" alt="information icon" class="alert__icon">
         <p>Sólo se procesan letras minúsculas sin acentos</p>
       </div>
-      <textarea class="input__field" type="text" placeholder="Ingrese el texto aquí" id="input-element"></textarea>
+      <textarea class="input__field" type="text" placeholder="Ingrese el texto aquí" id="input-element" autofocus></textarea>
       <div class="card__actions">
         <button class="card__actions__button" id="encrypt-button" type="button">Encriptar</button>
         <button class="card__actions__button" id="decrypt-button" type="button">Desencriptar</button>
       </div>
     </section>
 
-    <section class="input__output__card">
+    <section class="main__card" id="output-card">
       <h4 class="card__title">Salida</h4>
       <p class="card__text" id="output-element">Ningún mensaje encontrado</p>
       <div class="card__actions">
         <button class="card__actions__button" id="copy-button" type="button">Copiar</button>
       </div>
     </section>
+
   </main>
   
   <footer class="footer">

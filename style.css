@@ -32,7 +32,7 @@ body{
   position: relative;
 }
 
-.input__output__card{
+.main__card{
   width: 45vw;
   min-height: 200px;
   margin: auto;
@@ -62,7 +62,7 @@ body{
 }
 
 .card__alert{
-  border-left: #615EFC solid 2px;
+  border-left: #FFFFFF solid 2px;
   background-color: #7E8EF1;
   border-radius: 2px;
   padding-left: 4px;
@@ -110,7 +110,7 @@ body{
   transform: scale(1.1)
 }
 
-.input__output{
+.main{
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
@@ -120,11 +120,12 @@ body{
 .input__field{
   width: 99%;
   margin: 8px 0;
-  border: #dfdfdf solid 1px;
+  border: none;
+  border-bottom: #dfdfdf solid 1px;
   border-radius: 2px;
   color: #FFFFFF;
   outline: none;
-  background-color: #7E8EF1;
+  background-color: #615EFC;
 }
 
 .input__field::placeholder{
@@ -135,7 +136,7 @@ body{
   outline: 1.5px solid #7E8EF1;
 }
 
-.input__output .card .card__title{
+.main__input{
   color: white;
 }
 
@@ -171,7 +172,7 @@ body{
 
 @media screen and (max-width: 1024px){
 
-  .input__output__card{
+  .main__card{
     width: 47vw;
     min-height: 250px;
   }
@@ -187,12 +188,12 @@ body{
     width: 80vw;
   }
   
-  .input__output{
+  .main{
     flex-direction: column;
     gap: 4px;
   }
 
-  .input__output__card{
+  .main__card{
     width: 80vw;
   }
 

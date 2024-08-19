@@ -1,214 +1,208 @@
-body{
-  padding: 0;
+:root {
+  --primary: #615EFC;
+  --secondary: #EEE;
+  --grey: #5C5C5C;
+  --lightgrey: #D3D3D3;
+}
+
+* {
   margin: 0;
-  border: 0;
-  background-color: #EEEEEE;
-  color: #555555;
+  padding: 0;
+}
+
+html {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: var(--secondary);
+  color: var(--grey);
 }
 
-.heading{
-  margin-top: 0;
-  margin-bottom: 60px;
-  background-color: #615EFC;
-  text-align: center;
+.heading {
   font-family: "Bebas Neue", sans-serif;
-  text-align: center;
-  color: #EEEEEE;
   font-weight: 400;
   font-size: 2rem;
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
-.heading__card{
-  width: 45vw;
-  height: 160px;
-  margin: auto;
-  padding: 8px;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  box-shadow: 3px 3px 3px #dfdfdf;
+.header {
   position: relative;
+  width: 90%;
+  height: 140px;
+  padding: 8px;
+  border-radius: 8px;
 }
 
-.main__card{
-  width: 45vw;
-  min-height: 200px;
-  margin: auto;
-  padding: 8px;
-  background-color: #615EFC;
+.card {
+  position: relative;
+  width: 90%;
+  min-height: 160px;
+  margin: 32px auto 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: block;
+  background-color: white;
+  box-shadow: 2px 2px 6px var(--lightgrey);
+}
+
+.card_bg-primary {
+  background-color: var(--primary);
+}
+
+.card_text-white {
   color: white;
-  border-radius: 8px;
-  box-shadow: 3px 3px 3px #dfdfdf;
-  position: relative;
 }
 
-.card__sticker{
-  width: 90px;
-  position: absolute;
-  top: -40px;
-  right: -40px;
-  background-color: #FFFFFF;
-  box-shadow: 2px 2px 10px #dfdfdf;
-  border-radius: 50%;
+.card__title {
+  font-size: 24px;
 }
 
-.card__title{
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+.card__title_text-md {
+  font-size: 18px;
 }
 
-.card__alert{
-  border-left: #FFFFFF solid 2px;
-  background-color: #7E8EF1;
-  border-radius: 2px;
-  padding-left: 4px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  height: 1.5rem;
-  font-size: 0.9rem;
+.card__text {
+  margin-top: 10px;
 }
 
-.alert__icon{
-  width: 1rem;
-  height: 1rem;
-}
-
-.card__actions{
+.card__action-container {
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
+  margin-top: 10px;
 }
 
-.card__actions__link{
-  padding: 4px;
-  color: #615EFC;
+.card__link {
   text-decoration: none;
+  color: var(--primary);
 }
 
-.card__actions__link:hover{
+.card__link:hover {
   text-decoration: underline;
 }
 
-.card__actions__button{
-  margin: 0 2px;
-  padding: 4px 8px;
-  background-color: #7E8EF1;
+
+.card__button {
+  height: 20px;
+  width: 90px;
   border: none;
   border-radius: 2px;
   font-weight: 500;
+  color: var(--primary);
+  background-color: white;
   cursor: pointer;
-  color: #FFFFFF;
   transition: transform .3s;
 }
 
-.card__actions__button:hover{
-  transform: scale(1.1)
+.card__button:hover{
+  transform: scale(1.05)
 }
 
-.main{
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: space-around;
+.card__sticker {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url('./assets/bonbon-line-programmer-coding-at-laptop.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 6px var(--lightgrey);
 }
 
-.input__field{
-  width: 99%;
-  margin: 8px 0;
-  border: none;
-  border-bottom: #dfdfdf solid 1px;
+.card__alert {
+  height: 24px;
+  margin-top: 10px;
+  padding-left: 5%;
   border-radius: 2px;
-  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  background-color: #7E8EF1;
+  background-image: url('./assets/icons8-information-50.png');
+  background-repeat: no-repeat;
+  background-size: 3%;
+  background-position-x: 4px;
+  background-position-y: center;
+}
+
+.card__input {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid var(--lightgrey);
+  border-radius: 2px;
+  background-color: var(--primary);
+  color: white;
   outline: none;
-  background-color: #615EFC;
 }
 
-.input__field::placeholder{
-  color: #FFFFFF;
-}
-
-.input__field:focus{
-  outline: 1.5px solid #7E8EF1;
-}
-
-.main__input{
+.card__input::placeholder {
   color: white;
 }
 
-.footer{
-  position: fixed;
-  bottom: 0;
-  display: flex;  
-  justify-content: center;
-  gap: 10px;
-  width: 100vw;
-  padding: 4px;
-  background-color: #EEEEEE;
-  border: #dfdfdf solid 1px;
+.card__input:focus {
+  outline: 1.5px solid var(--primary);
 }
 
-.footer__links{
+.main {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  padding-top: 4px;
+  border-top: 1px solid var(--lightgrey);
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--secondary);
+}
+
+.footer__link-container {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-.footer__links__item img{
-  width: 18px;
-  height: 18px;
+.footer__link {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: left;
+  background-position-y: center;
 }
 
-.footer__text{
-  padding: 0;
-  margin: 0;
+.footer__link_bg_linkedin {
+  background-image: url('./assets/icons8-linkedin-50.png');
 }
 
-/* md screen */
-
-@media screen and (max-width: 1024px){
-
-  .main__card{
-    width: 47vw;
-    min-height: 250px;
-  }
-  
+.footer__link_bg_github {
+  background-image: url('./assets/icons8-github-50.png');
 }
 
-/* sm screen */
-
-@media screen and (max-width: 764px){
+@media screen and (min-width: 764px) {
   
-  .heading__card{
-    height: 200px;
-    width: 80vw;
-  }
-  
-  .main{
-    flex-direction: column;
-    gap: 4px;
+  .card {
+    width: 45%;
   }
 
-  .main__card{
-    width: 80vw;
-  }
-
-  .card__sticker{
-    width: 70px;
-    position: absolute;
-    top: -40px;
-    right: -20px;
-    background-color: #FFFFFF;
-    box-shadow: 2px 2px 10px #dfdfdf;
-    border-radius: 50%;
-  }  
-
-  .card__alert{
-    font-size: 11px;
+  .main {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
 }

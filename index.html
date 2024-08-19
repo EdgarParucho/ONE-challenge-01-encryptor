@@ -10,44 +10,34 @@
   <title>Encryptor</title>
 </head>
 <body>
-
   <h1 class="heading">Encryptor</h1>
-  <section class="heading__card">
+  <header class="card card_m-auto">
     <h2 class="card__title">¡Hey, gracias por estar aquí!</h2>
-    <img class="card__sticker" src="./assets/bonbon-line-programmer-coding-at-laptop.png" alt="">
     <p class="card__text">Este proyecto es parte del programa ONE de Oracle y Alura como práctica de las tecnologías básicas del desarrollo web.</p>
-    <div class="card__actions">
-      <a class="card__actions__link" href="https://www.oracle.com/mx/education/oracle-next-education/" target="_blank">
-        Acerca de ONE
-      </a>
-      |
-      <a class="card__actions__link" href="https://github.com/EdgarParucho/ONE-challenge-01-encryptor" target="_blank">
+    <div class="card__action-container">
+      <a class="card__link" href="https://github.com/EdgarParucho/ONE-challenge-01-encryptor" target="_blank">
         Repositorio
       </a>
     </div>
-  </section>
-
+    <div class="card__sticker"></div>
+  </header>
   <main class="main">
-
-    <section class="main__card">
-      <h4 class="card__title">Entrada</h4>
+    <section class="card card_bg-primary card_text-white">
+      <h4 class="card__title card__title_text-md">Entrada</h4>
       <p class="card__text">Ingresa un texto y pulsa un botón para encriptar o desencriptar.</p>
-      <div class="card__alert">
-        <img src="./assets/icons8-information-50.png" alt="information icon" class="alert__icon">
-        <p>Sólo se procesan letras minúsculas sin acentos</p>
-      </div>
-      <textarea class="input__field" type="text" placeholder="Ingrese el texto aquí" id="input-element" autofocus></textarea>
-      <div class="card__actions">
-        <button class="card__actions__button" id="encrypt-button" type="button">Encriptar</button>
-        <button class="card__actions__button" id="decrypt-button" type="button">Desencriptar</button>
+      <p class="card__alert">Sólo se procesan letras minúsculas sin acentos</p>
+      <textarea class="card__input" type="text" placeholder="Ingrese el texto aquí" id="input-element" autofocus></textarea>
+      <div class="card__action-container">
+        <button class="card__button" id="encrypt-button" type="button">Encriptar</button>
+        <button class="card__button" id="decrypt-button" type="button">Desencriptar</button>
       </div>
     </section>
 
-    <section class="main__card" id="output-card">
-      <h4 class="card__title">Salida</h4>
+    <section class="card card_bg-primary card_text-white" id="output-card">
+      <h4 class="card__title card__title_text-md">Salida</h4>
       <p class="card__text" id="output-element">Ningún mensaje encontrado</p>
-      <div class="card__actions">
-        <button class="card__actions__button" id="copy-button" type="button">Copiar</button>
+      <div class="card__action-container">
+        <button class="card__button" id="copy-button" type="button">Copiar</button>
       </div>
     </section>
 
@@ -55,13 +45,9 @@
   
   <footer class="footer">
     <p class="footer__text">Desarrollado por Edgar Parucho, 2024</p>
-    <div class="footer__links">
-      <a class="footer__links__item" href="https://linkedin.com/in/edgarparucho">
-        <img src="./assets/icons8-linkedin-50.png" alt="logo linkedin">
-      </a>
-      <a class="footer__links__item" href="https://github.com/edgarparucho">
-        <img src="./assets/icons8-github-50.png" alt="logo github">
-      </a>
+    <div class="footer__link-container">
+      <a class="footer__link footer__link_bg_linkedin" href="https://linkedin.com/in/edgarparucho"></a>
+      <a class="footer__link footer__link_bg_github" href="https://github.com/edgarparucho"></a>
     </div>
   </footer>
   <script src="script.js"></script>
